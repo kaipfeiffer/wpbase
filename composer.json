@@ -1,0 +1,25 @@
+{
+    "name": "kaipfeiffer/wpbase",
+    "type": "library",
+    "description": "",
+    "keywords": [ "php" ],
+    "homepage": "https://loworx.com",
+    "license": "LGPL-3.0-or-later",
+    "version": "1.0.1",
+    "authors": [
+        {
+            "name": "Kai Pfeiffer",
+            "email": "kp@loworx.com",
+            "homepage": "http://loworx.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "ext-mbstring": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kaipfeiffer\\WPBase\\": "src"
+        }
+    }
+}
