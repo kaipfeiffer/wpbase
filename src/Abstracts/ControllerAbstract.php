@@ -1,6 +1,6 @@
 <?php
 
-namespace KaiPfeiffer\Rideshare;
+namespace KaiPfeiffer\WPBase;
 
 if (!defined('WPINC')) {
     die;
@@ -14,7 +14,7 @@ if (!defined('WPINC')) {
  * @since   0.1.0 
  */
 
-abstract class Controller_Abstract implements Ajax_Interface
+abstract class ControllerAbstract implements AjaxInterface
 {
     /**
      * AJAX_METHODS 

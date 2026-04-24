@@ -10,12 +10,11 @@ if (!defined('ABSPATH')) {
  * Abstract Static Class for Database-Access via wpdb
  *
  * @since      1.0.0
- * @package    Kpm_Counter
- * @subpackage Kpm_Counter/includes
+ * @package    WPBase
  * @author     Kai Pfeiffer <kp@idevo.de>
  */
 
-abstract class Model_Abstract
+abstract class ModelAbstract
 {
 
     /**

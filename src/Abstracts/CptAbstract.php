@@ -6,7 +6,7 @@ if (!defined('ABSPATH')) {
 	exit;
 }
 
-abstract class CPT_Abstract
+abstract class CptAbstract
 {
 	/*
     *   KONSTANTEN
