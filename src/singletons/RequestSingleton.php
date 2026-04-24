@@ -1,6 +1,6 @@
 <?php
 
-namespace KaiPfeiffer\WPBase;
+namespace KaiPfeiffer\WPBase\Singletons;
 
 if (!defined('ABSPATH')) {
     exit;
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 class RequestSingleton
 {
 
-    use SingletonTrait;
+    use \KaiPfeiffer\WPBase\Traits\SingletonTrait;
 
     /*
     *   KONSTANTEN

@@ -1,6 +1,6 @@
 <?php
 
-namespace KaiPfeiffer\Rideshare;
+namespace KaiPfeiffer\WPBase\Abstracts;
 
 if (!defined('WPINC')) {
     die;

@@ -1,6 +1,6 @@
 <?php
 
-namespace KaiPfeiffer\WPBase;
+namespace KaiPfeiffer\WPBase\Abstracts;
 
 if (!defined('WPINC')) {
     die;
@@ -14,7 +14,7 @@ if (!defined('WPINC')) {
  * @since   1.0.0 
  */
 
-abstract class AdminSubpageAbstract implements AjaxInterface
+abstract class AdminSubpageAbstract implements \KaiPfeiffer\WPBase\Interfaces\AjaxInterface
 {
     const ADMIN_SUBPAGE_SLUG = '';
 
@@ -162,7 +162,7 @@ abstract class AdminSubpageAbstract implements AjaxInterface
                 echo '<p>' . __('User not found.', 'rideshare') . '</p>';
                 return;
             }
-            $request = RequestSingleton::get_instance();
+            $request = \KaiPfeiffer\WPBase\Singletons\RequestSingleton::get_instance();
             if (wp_verify_nonce($request->get(static::NONCE_FIELD, 'string'), static::NONCE)) {
 
                 error_log(__CLASS__ . '->' . __LINE__ . '-> Nonce verified');

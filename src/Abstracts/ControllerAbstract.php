@@ -1,6 +1,6 @@
 <?php
 
-namespace KaiPfeiffer\WPBase;
+namespace KaiPfeiffer\WPBase\Abstracts;
 
 if (!defined('WPINC')) {
     die;
@@ -14,7 +14,7 @@ if (!defined('WPINC')) {
  * @since   0.1.0 
  */
 
-abstract class ControllerAbstract implements AjaxInterface
+abstract class ControllerAbstract implements \KaiPfeiffer\WPBase\Interfaces\AjaxInterface
 {
     /**
      * AJAX_METHODS 

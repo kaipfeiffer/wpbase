@@ -1,6 +1,6 @@
 <?php
 
-namespace KaiPfeiffer\WPBase;
+namespace KaiPfeiffer\WPBase\Traits;
 
 // If this file is called directly, abort.
 if (!defined('WPINC')) {

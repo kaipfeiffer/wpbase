@@ -1,6 +1,6 @@
 <?php
 
-namespace KaiPfeiffer\WPBase;
+namespace KaiPfeiffer\WPBase\Interfaces;
 
 if (!defined('ABSPATH')) {
     exit;

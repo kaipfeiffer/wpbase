@@ -1,6 +1,6 @@
 <?php
 
-namespace KaiPfeiffer\WPBase;
+namespace KaiPfeiffer\WPBase\Abstracts;
 
 if (!defined('ABSPATH')) {
     exit;
