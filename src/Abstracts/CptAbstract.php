@@ -611,8 +611,7 @@ abstract class CptAbstract
 				static::$after_insert = true;
 			} elseif (is_callable(array(static::class, 'wp_after_insert_new_post'))) {
 				static::$after_insert = false;
-				static::LOG_FLAGS & static::LOG_WP_INSERT_POST_DATA &&
-					add_action('wp_insert_post', array(static::class, 'wp_after_insert_new_post'), 10, 3);
+				add_action('wp_insert_post', array(static::class, 'wp_after_insert_new_post'), 10, 3);
 			}
 
 			$data['post_title'] =  static::create_post_title($data['post_title'] ?? '', $postarr); //Updates the post title to your new title.
